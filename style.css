@@ -1,0 +1,102 @@
+
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+  background-size: cover;
+}
+
+.countDown{
+  background-color: linear-gradient(45deg, #6c5ce7, #e84393);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 40rem;
+  font-size: 2rem;
+}
+.countDown div{
+  margin-right: 20px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border: 5px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+}
+
+
+
+.countDown .colon{
+  margin-right: 20px;
+}
+
+.day, .hour, .mins, .sec{
+ text-align: center;
+}
+
+img{
+  position: absolute;
+  z-index: -10;
+  height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    background-color: lightgreen;
+   
+  }
+  .countDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 20rem;
+    font-size: 15px;
+    background: linear-gradient(45deg, #0001b8, #e84393);
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    
+  }
+
+  .countDown div{
+
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #55efc4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+  margin-right: 5px;
+  padding: 20px;
+  }
+
+
+  .countDown .colon{
+    margin-right: 5px;
+    font-weight: 800;
+  }
+}
